@@ -1,0 +1,51 @@
+.atletas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.card-atleta {
+    background: linear-gradient(145deg, #1f2933, #111827);
+    color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+    
+}
+
+.card-atleta:hover {
+    transform: translateY(-6px);
+}
+
+.card-overall {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: gold;
+    color: #000;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+
+.card-nome {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.card-posicao {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 12px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
