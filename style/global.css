@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000;
+}
+
 /* Cabeçalho */
 .cabecalho {
     background-color: black; 
@@ -43,7 +47,6 @@
 .menu ul{
     list-style: none;
     display: flex;
-    list-style: none;
     gap: 2rem;
 }
 
@@ -66,4 +69,8 @@
 .menu a.ativo {
     background-color: #D4AF37; /* Dourado */
     color: #000;
+}
+
+.d {
+    color: white;
 }

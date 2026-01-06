@@ -26,12 +26,45 @@
             </nav>       
     </header>
     <main>
-        <section class="atletas-section">
-            <h1>Atletas</h1>
-                <div id="atletas-container">
+        <section class="atletas">
 
-                </div>
+        <div class="atletas-header">
+            <span>Elenco 2026</span>
+            <h1>Nossos Atletas</h1>
+            <p>Conheça nossos guerreiros da temporada</p>
+        </div>
+
+        <nav class="atletas-filtros">
+            <ul>
+                <li data-posicao ="Todos">Todos</li>
+                <li data-posicao="Goleiro">Goleiro</li>
+                <li data-posicao="Fixo">Fixo</li>
+                <li data-posicao="Ala">Ala</li>
+                <li data-posicao="Pivo">Pivo</li>
+            </ul>
+        </nav>
+
+        <div class="atletas-resumo">
+            <div class="resumo-card">
+                <span id="total-atletas" class="resumo-numero">0</span>
+                <p class="resumo-label">ATLETAS</p>
+            </div>
+
+            <div class="resumo-card">
+                <span id="total-gols" class="resumo-numero">0</span>
+                <p class="resumo-label">GOLS TOTAL</p>
+            </div>
+
+            <div class="resumo-card">
+                <span id="total-assistencias" class="resumo-numero">0</span>
+                <p class="resumo-label">ASSISTÊNCIAS</p>
+            </div>
+        </div>
+
+        <div id="atletas-container" class="atletas-container"></div>
+
         </section>
+
     </main>
     
    
