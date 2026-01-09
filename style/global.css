@@ -74,3 +74,26 @@ body {
 .d {
     color: white;
 }
+
+
+.rodape {
+    background: linear-gradient(180deg, #0b0b0b, #000);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.rodape span {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e10600; /* vermelho principal do site */
+}
+
+.rodape p {
+    font-size: 14px;
+    margin: 8px 0;
+    opacity: 0.8;
+}

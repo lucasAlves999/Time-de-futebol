@@ -10,6 +10,10 @@
     text-transform: uppercase;
     opacity: 0.7;
     color: #e30613;
+    border: solid 4px red;
+    border-radius: 10px;
+    padding: 4px 4px 4px 5px;
+    background-color: #74262b80;
 }
 
 .atletas-header h1 {

@@ -1,0 +1,254 @@
+/* =========================
+   HEADER DA PÁGINA
+========================= */
+
+.atletas-header {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.atletas-header span {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    color: #e30613;
+    border: 4px solid #e30613;
+    border-radius: 10px;
+    padding: 6px 10px;
+    background-color: rgba(116, 38, 43, 0.5);
+}
+
+.atletas-header h1 {
+    font-size: 4rem;
+    margin: 16px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.atletas-header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* =========================
+   LISTA DE ARTILHARIA
+========================= */
+
+.artilharia-container {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.artilharia-linha {
+    display: grid;
+    grid-template-columns: 60px 1fr 120px;
+    align-items: center;
+    padding: 16px 22px;
+    background: #111;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.artilharia-linha:hover {
+    transform: translateX(6px);
+    background: #1a1a1a;
+}
+
+.artilharia-linha .posicao {
+    font-weight: bold;
+    color: #e10600;
+    font-size: 1.2rem;
+}
+
+.artilharia-linha .nome {
+    font-size: 1.5rem;
+}
+
+.artilharia-linha .gols {
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* =========================
+   DESTAQUES DO PÓDIO (LISTA)
+========================= */
+
+.ouro {
+    border-left: 10px solid #f5c518;
+}
+
+.prata {
+    border-left: 10px solid #c0c0c0;
+}
+
+.bronze {
+    border-left: 10px solid #cd7f32;
+}
+
+/* =========================
+   RESUMO DA TEMPORADA
+========================= */
+
+.artilharia-resumo {
+    border: 2px solid rgba(255, 0, 0, 0.6);
+    padding: 3rem;
+    max-width: 1000px;
+    margin: 80px auto;
+}
+
+.resumo-titulo {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.resumo-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+}
+
+.resumo-card {
+    padding: 2rem;
+}
+
+.resumo-numero {
+    font-size: 46px;
+    font-weight: bold;
+    color: #ff2a2a;
+}
+
+.resumo-label {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   TOP 3 ARILHEIROS (CARDS)
+========================= */
+
+.top-artilharia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+    margin: 60px auto 40px;
+    max-width: 1000px;
+}
+
+/* Card base */
+.top-card {
+    width: 260px;
+    height: 420px;
+    background: #0f0f0f;
+    border-radius: 20px;
+    position: relative;
+    padding: 24px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+    overflow: hidden;
+}
+
+/* Faixa superior */
+.top-faixa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+/* Ouro */
+.top-0 {
+    background: linear-gradient(135deg, #f5c518, #b68a00);
+}
+
+/* Prata */
+.top-1 {
+    background: linear-gradient(135deg, #c0c0c0, #7d7d7d);
+}
+
+/* Bronze */
+.top-2 {
+    background: linear-gradient(135deg, #cd7f32, #8b4a12);
+}
+
+/* Posição */
+.top-posicao {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-top: 12px;
+    z-index: 2;
+}
+
+/* Foto retangular */
+.top-foto {
+    width: 14rem; /* Aumenta largura */
+    height: 14rem; /* Aumenta altura */
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 3px;
+    background: #111;
+}
+
+.top-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain' para ver imagem inteira */
+    object-position: 50% 15%;  /* ajusta o foco verticalmente */
+}
+
+/* Nome */
+.top-nome {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* Posição em campo */
+.top-posicao-jogo {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-bottom: 16px;
+}
+
+/* Caixa de gols */
+.top-gols-box {
+    margin-top: auto;
+    background: rgba(0,0,0,0.5);
+    border-radius: 14px;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.top-gols-num {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f5c518;
+    display: block;
+}
+
+.top-gols-label {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}

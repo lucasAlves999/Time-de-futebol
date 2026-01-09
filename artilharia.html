@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/artilharia.css">
     <title>Artilharia</title>
     
 </head>
@@ -24,5 +25,59 @@
                 </ul>
             </nav>       
     </header>
+
+    <main>
+
+       
+
+        <section class="artilharia">
+            
+            <div class="atletas-header">
+                <span>Temporada 2026</span>
+                <h1>Artilharia</h1>
+                <p>Os destaques do nosso time em gols e assistências</p>
+            </div>
+
+            <div id="artilharia-container" class="artilharia-container"></div>
+             
+            
+            <section class="top-artilharia">
+                <div class="top-card prata" id="top-2"></div>
+                <div class="top-card ouro" id="top-1"></div>
+                <div class="top-card bronze" id="top-3"></div>
+            </section>
+
+            <div class="artilharia-resumo">
+                <h2 class="resumo-titulo">Resumo da Temporada</h2>
+
+                <div class="resumo-cards">
+                    <div class="resumo-card">
+                        <span id="total-atletas" class="resumo-numero">0</span>
+                        <p class="resumo-label">ATLETAS</p>
+                    </div>
+
+                    <div class="resumo-card">
+                        <span id="total-gols" class="resumo-numero">0</span>
+                        <p class="resumo-label">GOLS TOTAL</p>
+                    </div>
+
+                    <div class="resumo-card">
+                        <span id="total-assistencias" class="resumo-numero">0</span>
+                        <p class="resumo-label">ASSISTÊNCIAS</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./js/dados/atletas.js"></script>
+    <script src="./js/scripts/artilharia.js"></script>
+
+    <footer class="rodape">
+        <span>Amigos do Arthur</span>
+        <p>Futebol de Salão, amizade e churrasco</p>
+        <p>Desenvolvido por Lucas para todos os amantes de Futsal</p>
+    </footer>
 </body>
 </html>

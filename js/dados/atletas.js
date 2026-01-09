@@ -2,14 +2,15 @@ const atletas = [
     {
         nome: "Lucas",
         idade: 23,
-        posicao: "Pivo",
+        posicao: "Pivô",
         habilidades: {
             velocidade: 99,
             chute: 99,
             passe: 99
         },
-        gols: 5,
-        assistencias: 3
+        gols: 8,
+        assistencias: 3,
+        foto: "./assets/images/atletas/Atlucas.png"
     },
     {
         nome: "Diego Maradona",
@@ -20,10 +21,10 @@ const atletas = [
             chute: 76,
             passe: 90
         },
-        gols: 3,
-        assistencias: 5
+        gols: 4,
+        assistencias: 5,
+        foto: "./assets/images/atletas/avatar-default.png"
     },
-
     {
         nome: "Felipe Schiavini",
         idade: 28,
@@ -34,22 +35,22 @@ const atletas = [
             passe: 90
         },
         gols: 3,
-        assistencias: 5
+        assistencias: 5,
+        foto: "./assets/images/atletas/avatar-default.png"
     },
-
     {
         nome: "Thiago Souza",
         idade: 33,
-        posicao: "Pivo",
+        posicao: "Pivô",
         habilidades: {
             velocidade: 40,
             chute: 38,
             passe: 29
         },
         gols: 3,
-        assistencias: 5
+        assistencias: 5,
+        foto: "./assets/images/atletas/avatar-default.png"
     },
-
     {
         nome: "Danilo",
         idade: 40,
@@ -60,14 +61,7 @@ const atletas = [
             passe: 90
         },
         gols: 3,
-        assistencias: 5
+        assistencias: 5,
+        foto: "./assets/images/atletas/avatar-default.png"
     }
-
-
-
-
-
-
-
-    
 ];
