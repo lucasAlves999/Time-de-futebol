@@ -70,6 +70,13 @@ function atualizarResumoTemporada(listaAtletas) {
 
 atualizarResumoTemporada(atletas);
 
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+    menuToggle.classList.toggle("ativo");
+});
 
 
 

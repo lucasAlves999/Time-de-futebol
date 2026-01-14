@@ -1,3 +1,5 @@
+
+
 .atletas-header {
     color: white;
     text-align: center;
@@ -14,12 +16,13 @@
     border-radius: 10px;
     padding: 4px 4px 4px 5px;
     background-color: #74262b80;
+    font-family: 'bebas neue';
 }
 
 .atletas-header h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 10px 0;
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'bebas neue';
     
 }
 

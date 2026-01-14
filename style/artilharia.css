@@ -18,12 +18,13 @@
     border-radius: 10px;
     padding: 6px 10px;
     background-color: rgba(116, 38, 43, 0.5);
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .atletas-header h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 16px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .atletas-header p {
@@ -76,20 +77,12 @@
 }
 
 /* =========================
-   DESTAQUES DO PÓDIO (LISTA)
+   DESTAQUES (CORES)
 ========================= */
 
-.ouro {
-    border-left: 10px solid #f5c518;
-}
-
-.prata {
-    border-left: 10px solid #c0c0c0;
-}
-
-.bronze {
-    border-left: 10px solid #cd7f32;
-}
+.ouro { border-left: 10px solid #f5c518; }
+.prata { border-left: 10px solid #c0c0c0; }
+.bronze { border-left: 10px solid #cd7f32; }
 
 /* =========================
    RESUMO DA TEMPORADA
@@ -107,7 +100,6 @@
     margin-bottom: 3rem;
     font-size: 2.2rem;
     letter-spacing: 3px;
-    color: #fff;
 }
 
 .resumo-cards {
@@ -115,10 +107,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     text-align: center;
-}
-
-.resumo-card {
-    padding: 2rem;
 }
 
 .resumo-numero {
@@ -132,11 +120,11 @@
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.7;
 }
 
 /* =========================
-   TOP 3 ARILHEIROS (CARDS)
+   TOP 3 ARTILHEIROS
 ========================= */
 
 .top-artilharia {
@@ -144,111 +132,122 @@
     justify-content: center;
     align-items: flex-end;
     gap: 24px;
-    margin: 60px auto 40px;
+    margin: 60px auto;
     max-width: 1000px;
 }
 
-/* Card base */
 .top-card {
     width: 260px;
     height: 420px;
     background: #0f0f0f;
     border-radius: 20px;
-    position: relative;
     padding: 24px;
-    text-align: center;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     box-shadow: 0 20px 40px rgba(0,0,0,0.7);
     overflow: hidden;
 }
 
-/* Faixa superior */
 .top-faixa {
     position: absolute;
     top: 0;
-    left: 0;
-    height: 90px;
     width: 100%;
-    border-radius: 20px 20px 0 0;
-    opacity: 0.9;
+    height: 90px;
     z-index: 1;
 }
 
-/* Ouro */
-.top-0 {
-    background: linear-gradient(135deg, #f5c518, #b68a00);
-}
+.top-0 { background: linear-gradient(135deg, #f5c518, #b68a00); }
+.top-1 { background: linear-gradient(135deg, #c0c0c0, #7d7d7d); }
+.top-2 { background: linear-gradient(135deg, #cd7f32, #8b4a12); }
 
-/* Prata */
-.top-1 {
-    background: linear-gradient(135deg, #c0c0c0, #7d7d7d);
-}
-
-/* Bronze */
-.top-2 {
-    background: linear-gradient(135deg, #cd7f32, #8b4a12);
-}
-
-/* Posição */
 .top-posicao {
     font-size: 2.6rem;
     font-weight: 800;
-    margin-top: 12px;
     z-index: 2;
+    margin-top: 12px;
 }
 
-/* Foto retangular */
 .top-foto {
-    width: 14rem; /* Aumenta largura */
-    height: 14rem; /* Aumenta altura */
-    border-radius: 15px;
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
     overflow: hidden;
-    margin: 3px;
-    background: #111;
+    margin: 14px 0;
 }
 
 .top-foto img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* ou 'contain' para ver imagem inteira */
-    object-position: 50% 15%;  /* ajusta o foco verticalmente */
+    height: 190%;
+    object-fit: contain;   /* mostra a imagem inteira */
+    object-position: center;
+    background-color: #000;
 }
 
-/* Nome */
+
 .top-nome {
     font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 6px;
 }
 
-/* Posição em campo */
-.top-posicao-jogo {
-    font-size: 1rem;
-    opacity: 0.7;
-    margin-bottom: 16px;
-}
-
-/* Caixa de gols */
 .top-gols-box {
     margin-top: auto;
-    background: rgba(0,0,0,0.5);
-    border-radius: 14px;
-    padding: 16px 0;
     width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    background: rgba(0,0,0,0.5);
 }
 
 .top-gols-num {
     font-size: 3rem;
     font-weight: bold;
     color: #f5c518;
-    display: block;
 }
 
-.top-gols-label {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    opacity: 0.8;
+/* =========================
+   RESPONSIVO — ARTILHARIA
+========================= */
+
+@media (max-width: 768px) {
+
+    .atletas-header h1 {
+        font-size: 2.6rem;
+    }
+
+    .artilharia-container {
+        width: 92%;
+    }
+
+    .artilharia-linha {
+        grid-template-columns: 40px 1fr 80px;
+    }
+
+    .top-artilharia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-card {
+        width: 92%;
+        max-width: 340px;
+        height: auto;
+    }
+
+    .resumo-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .top-card.ouro {
+    order: 1;
+}
+
+.top-card.prata {
+    order: 2;
+}
+
+.top-card.bronze {
+    order: 3;
+}
 }
