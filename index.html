@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/index.css">
     <title>Amigos do Arthur - Futebol de Salão</title>
     
 </head>
@@ -26,11 +27,84 @@
     </header>
 
     <main>
-        <div class="d">
-            <h1>Amigos do Arthur</h1>
-            <p>Futebol de Salão, amizade e churrasco</p>
+        <section>
+
+            <div class="home-header">
+                <span>Amigos do Arthur</span>
+                <h2>Futebol de Salão, amizade e churrasco.</h2>
+            </div>
+
+            <div class="atletas-resumo">
+
+                <div class="resumo-card">
+                    <span  class="resumo-numero">0</span>
+                    <p class="resumo-label">PARTIDAS</p>
+                </div>
+
+                <div class="resumo-card">
+                    <span id="home-gols" class="resumo-numero">0</span>
+                    <p class="resumo-label">GOLS MARCADOS</p>
+                </div>
+
+                <div class="resumo-card">
+                    <span id="home-assistencias" class="resumo-numero">0</span>
+                    <p class="resumo-label">ASSISTÊNCIAS</p>
+                </div>
+
+                <div class="resumo-card">
+                    <span  class="resumo-numero">0</span>
+                    <p class="resumo-label">MEDIA DE GOLS</p>
+                </div>
+
+            </div>
+            <div class="momento-atual">
+                <span>Momento atual</span>
+                <p>Inicio de mais uma temporada !! </p>
+            </div>
+        </section>
+
+        <section>
+    <div class="info-container">
+
+        <img src="./assets/images/backgrounds/fut.jpeg" alt="Futsal">
+
+        <div class="info-content">
+            <p>
+                Pra essa temporada temos muitas metas e objetivos, o topo do ranking,
+                a disputa de festivais, a união e fortalecimento do time e é claro
+                muito churrasco e futsal.
+            </p>
+
+            <div class="time-resumo">
+                <div class="resumo-card">
+                    <span id="classificacao" class="pos-numero">0</span>
+                    <p class="resumo-label">CLASSIFICAÇÃO</p>
+                </div>
+
+                <div class="resumo-card">
+                    <span id="pontos" class="pos-numero">0</span>
+                    <p class="resumo-label">PONTOS</p>
+                </div>
+
+                <div class="resumo-card">
+                    <span id="vitorias" class="vit-numero">0</span>
+                    <p class="resumo-label">VITÓRIAS</p>
+                </div>
+
+                
+            </div>
         </div>
-    </main>
+
+    </div>
+</section>
+
+</main>
+
+<script src="./js/dados/atletas.js"></script>
+<script src="./js/scripts/atletas-reusmo.js"></script>
+
+<script src="./js/scripts/index.js"></script>
+
 
     <footer class="rodape">
         <span>Amigos do Arthur</span>

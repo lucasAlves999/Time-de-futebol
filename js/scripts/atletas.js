@@ -35,19 +35,11 @@ renderizarAtletas(atletas);
 
 
 function atualizarResumo(listaAtletas) {
-    const totalAtletas = listaAtletas.length;
+    const resumo = calcularResumoAtletas(listaAtletas);
 
-    const totalGols = listaAtletas.reduce((soma, atleta) => {
-        return soma + atleta.gols;
-    }, 0);
-
-    const totalAssistencias = listaAtletas.reduce((soma, atleta) => {
-        return soma + atleta.assistencias;
-    }, 0);
-
-    document.getElementById("total-atletas").textContent = totalAtletas;
-    document.getElementById("total-gols").textContent = totalGols;
-    document.getElementById("total-assistencias").textContent = totalAssistencias;
+    document.getElementById("total-atletas").textContent = resumo.totalAtletas;
+    document.getElementById("total-gols").textContent = resumo.totalGols;
+    document.getElementById("total-assistencias").textContent = resumo.totalAssistencias;
 }
 
 function calcularOverall(habilidades) {

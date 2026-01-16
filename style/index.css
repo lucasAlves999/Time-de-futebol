@@ -1,0 +1,195 @@
+/* =========================
+   HOME HEADER
+========================= */
+
+.home-header {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.home-header span {
+    font-size: 6rem;
+    margin: 16px 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.home-header h2 {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+
+/* =========================
+   RESUMO PRINCIPAL (HOME)
+========================= */
+
+.atletas-resumo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0 20px;
+    flex-wrap: wrap;
+}
+
+.resumo-card {
+    background: radial-gradient(circle at top, #1a0000, #000);
+    border: 1px solid rgba(255, 0, 0, 0.61);
+    border-radius: 16px;
+    width: 220px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+}
+
+.resumo-numero {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ff2a2a;
+}
+
+.resumo-label {
+    margin-top: 8px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================
+   MOMENTO ATUAL
+========================= */
+
+.momento-atual {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.momento-atual span {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: #e30613;
+    border: 4px solid #e30613;
+    border-radius: 10px;
+    padding: 6px 10px;
+    background-color: rgba(116, 38, 43, 0.5);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.momento-atual p {
+    opacity: 0.8;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+
+/* =========================
+   BLOCO IMAGEM + TEXTO + ESTATÍSTICAS
+========================= */
+
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.info-container img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Coluna do texto + estatísticas */
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.info-content p {
+    margin: 0;
+}
+
+
+/* =========================
+   ESTATÍSTICAS DO TIME
+========================= */
+
+.time-resumo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.pos-numero {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.vit-numero {
+    font-size: 42px;
+    font-weight: bold;
+    color: chartreuse;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    .home-header span {
+        font-size: 4rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-content {
+        align-items: center;
+    }
+
+    .time-resumo {
+        justify-content: center;
+    }
+
+    .atletas-resumo,
+    .time-resumo {
+        gap: 15px;
+    }
+
+    .resumo-card {
+        width: 180px;
+        height: 100px;
+    }
+
+    .resumo-numero,
+    .pos-numero,
+    .vit-numero {
+        font-size: 32px;
+    }
+}
+
+
+
+
+      

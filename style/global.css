@@ -46,7 +46,8 @@ body {
 .logo-container p {
     font-size: 0.9rem;
     opacity: 0.8;
-    color: red;
+    color: #e10600;
+    font-weight: bold;
 }
 
 /* =========================
