@@ -2,7 +2,7 @@ const atletas = [
     {
         nome: "Lucas",
         idade: 23,
-        posicao: "Pivô",
+        posicao: "Pivo",
         habilidades: {
             velocidade: 99,
             chute: 99,
@@ -23,7 +23,7 @@ const atletas = [
         },
         gols: 4,
         assistencias: 5,
-        foto: "./assets/images/atletas/avatar-default.png"
+        foto: "./assets/images/atletas/Atmaradona.png"
     },
     {
         nome: "Felipe Schiavini",
@@ -36,12 +36,12 @@ const atletas = [
         },
         gols: 3,
         assistencias: 5,
-        foto: "./assets/images/atletas/avatar-default.png"
+        foto: "./assets/images/atletas/Atfelipe.png"
     },
     {
         nome: "Thiago Souza",
         idade: 33,
-        posicao: "Pivô",
+        posicao: "Pivo",
         habilidades: {
             velocidade: 40,
             chute: 38,
@@ -52,8 +52,8 @@ const atletas = [
         foto: "./assets/images/atletas/avatar-default.png"
     },
     {
-        nome: "Danilo",
-        idade: 40,
+        nome: "Dieguinho",
+        idade: 23,
         posicao: "Ala",
         habilidades: {
             velocidade: 77,

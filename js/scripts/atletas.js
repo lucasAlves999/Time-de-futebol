@@ -1,4 +1,3 @@
-console.log("Sprint 2 iniciado");
 
 const container = document.getElementById("atletas-container");
 
@@ -8,6 +7,11 @@ function renderizarAtletas(listaAtletas) {
     listaAtletas.forEach(atleta => {
         const card = document.createElement("div");
         card.classList.add("card-atleta");
+
+        card.style.backgroundImage = `url(${atleta.foto || './assets/imagens/atletas/avatar-default.png'})`;
+        card.style.backgroundSize = "cover";
+        card.style.backgroundPosition = "center";
+
 
         const overall = calcularOverall(atleta.habilidades);
         const classeOverall = getClasseOverall(overall);
