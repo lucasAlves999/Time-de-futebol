@@ -1,4 +1,4 @@
-function calcularResumoAtletas(listaAtletas) {
+function calcularResumoAtletas(listaAtletas, partidas) {
 
     const totalAtletas = listaAtletas.length;
 
@@ -10,9 +10,17 @@ function calcularResumoAtletas(listaAtletas) {
         return soma + atleta.assistencias;
     }, 0);
 
+    const mediaGols = (totalGols / partidas).toFixed(1);
+        
+  
     return {
         totalAtletas,
         totalGols,
-        totalAssistencias
+        totalAssistencias,
+        mediaGols
+        
     };
 }
+
+
+
