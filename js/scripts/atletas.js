@@ -21,6 +21,8 @@ function renderizarAtletas(listaAtletas) {
 
             <h2 class="card-nome">${atleta.nome}</h2>
             <p class="card-posicao">${atleta.posicao}</p>
+            <p class="card-idade">${atleta.idade} anos</p>
+
 
             <div class="card-stats">
                 <span>⚽ ${atleta.gols}</span>
