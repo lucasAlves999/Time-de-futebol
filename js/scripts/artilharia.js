@@ -1,4 +1,3 @@
-console.log("Sprint 3 iniciado");
 
 const container = document.getElementById("artilharia-container");
 
